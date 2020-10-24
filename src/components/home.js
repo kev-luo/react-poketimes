@@ -17,7 +17,7 @@ class Home extends Component {
     console.log(res);
     this.setState({
       type: res.data.name,
-      pokemon: res.data.pokemon.slice(0,10)
+      pokemon: res.data.pokemon
     })
   }
 

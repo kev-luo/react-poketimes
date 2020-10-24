@@ -26,6 +26,7 @@ code {
 
 .display .pokemon img {
   position: absolute;
-  top: 50px;
-  right: 200px;
+  top: 70px;
+  right: 320px;
+  width: 350px;
 }
