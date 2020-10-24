@@ -1,13 +1,13 @@
 import Rainbow from '../hoc/rainbow';
+import { Link } from 'react-router-dom';
 
 const Contact = (props) => {
-  setTimeout(() => {
-    props.history.push('./about')
-  }, 2000)
+  
+  console.log(props.history)
   return (
     <div className="container">
       <h4 className="center">Contact</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos dicta magni id accusantium obcaecati, porro at consequuntur. Impedit assumenda magni in autem aspernatur quam! Distinctio hic earum tempora repellendus.</p>
+      <p>Visit <a href="https://pokeapi.co/">Pokemon Api</a> for more info.</p>
     </div>
   )
 }

@@ -6,44 +6,50 @@ import Pokeball from '../pokeball.png'
 
 class Home extends Component {
   state = {
-    posts: []
+    type: '',
+    pokemon: []
   }
 
   async componentDidMount() {
-    let res = await axios.get('https://jsonplaceholder.typicode.com/posts');
+    let search = Math.floor(Math.random() * 18) + 1;
+    let res = await axios.get(`https://pokeapi.co/api/v2/type/${search}`)
 
+    console.log(res);
     this.setState({
-      posts: res.data.slice(0,10)
+      type: res.data.name,
+      pokemon: res.data.pokemon.slice(0,10)
     })
   }
 
   render () {
-    const { posts } = this.state;
 
-    const postsListLength = posts.length;
+    const { type, pokemon } = this.state;
+    const header = <h4 className="center">{type} type</h4>;
 
-    const postsList = (postsListLength) ? (
-      posts.map(post => {
+    const ListLength = pokemon.length;
+
+    const pokeList = (ListLength) ? (
+      pokemon.map(pokemon => {
         return (
-          <div className="post card" key={post.id}>
+          <div className="post card" key={pokemon.pokemon.name}>
             <img src={ Pokeball } alt="pokeball"/>
             <div className="card-content">
-              <Link to={`/${post.id}`}>
-                <span className="card-title red-text">{post.title}</span>
+              <span className="card-title red-text">{pokemon.pokemon.name}</span>
+              <Link to={`/${pokemon.pokemon.name}`}>
+                <p>{pokemon.pokemon.name} stats</p>
               </Link>
-              <p>{post.body}</p>
             </div>
           </div>
         )
       })
     ) : (
-      <div className="center">No posts yet</div>
+      <div className="center">No pokemon</div>
     )
 
     return (
       <div className="container home">
-        <h4 className="center">Home</h4>
-        {postsList}
+        {header}
+        {pokeList}
       </div>
     )
   }

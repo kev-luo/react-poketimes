@@ -23,3 +23,9 @@ code {
   overflow: hidden;
   padding-left: 80px;
 }
+
+.display .pokemon img {
+  position: absolute;
+  top: 50px;
+  right: 200px;
+}
