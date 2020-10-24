@@ -10,7 +10,7 @@ class Home extends Component {
 
   async componentDidMount() {
     let res = await axios.get('https://jsonplaceholder.typicode.com/posts');
-    
+
     this.setState({
       posts: res.data.slice(0,10)
     })
@@ -26,7 +26,7 @@ class Home extends Component {
         return (
           <div className="post card" key={post.id}>
             <div className="card-content">
-              <span classNamem="card-title">{post.title}</span>
+              <span className="card-title">{post.title}</span>
               <p>{post.body}</p>
             </div>
           </div>
