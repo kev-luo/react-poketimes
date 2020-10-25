@@ -8,6 +8,7 @@ const Navbar = () => {
         <div className="brand-logo">Poke'Times</div>
         <ul className="right">
           <li><Link to="/">Home</Link></li>
+          <li><Link to="/pokeThoughts">PokeThoughts</Link></li>
           <li><NavLink to="/about">About</NavLink></li>
           <li><NavLink to="/contact">Contact</NavLink></li>
         </ul>

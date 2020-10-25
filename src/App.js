@@ -5,6 +5,8 @@ import Home from './components/home';
 import Contact from './components/contact';
 import About from './components/about';
 import Pokemon from './components/pokemon';
+import PokeThoughts from './components/pokeThoughts';
+import PokeThought from './components/pokeThought';
 
 class App extends Component {
   render() {
@@ -14,6 +16,8 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path='/' component={ Home } />
+            <Route exact path='/pokeThoughts' component={ PokeThoughts } />
+            <Route path='/pokeThoughts/:post_id' component={ PokeThought } />
             <Route path='/about' component={ About } />
             <Route path='/contact' component={ Contact } />
             <Route path= '/:pokemon' component={ Pokemon } />
