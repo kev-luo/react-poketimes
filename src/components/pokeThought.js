@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import deletePost from '../actions/postActions';
 
 class PokeThought extends Component {
   
@@ -39,9 +40,7 @@ const mapStateToProps = (state, ownProps) => { // adds a post key to the PokeTho
 
 const mapDispatchToProps = (dispatch) => { // adds a deletePost key to the PokeThought component props object
   return {
-    deletePost: (id) => {
-      dispatch({type: 'DELETE_POST', id: id})
-    }
+    deletePost: (id) => dispatch(deletePost(id))
   }
 }
 

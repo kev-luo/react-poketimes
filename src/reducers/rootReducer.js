@@ -6,7 +6,7 @@ const initState = {
 }
 
 const rootReducer = (state = initState, action) => {
-  console.log(action); // when the deletePost fxn is dispatched from pokeThought, this rootReducer receives the action and logs it to the console
+  console.log(action); // when the deletePost fxn returns the dispatch fxn (which carries the type of action and an optional payload) from pokeThought, this rootReducer receives the action and logs it to the console
   if (action.type === "DELETE_POST") {
     let newPosts = state.posts.filter(post => {
       return post.id !== action.id
