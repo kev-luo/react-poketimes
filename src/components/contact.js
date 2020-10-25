@@ -1,5 +1,4 @@
 import Rainbow from '../hoc/rainbow';
-import { Link } from 'react-router-dom';
 
 const Contact = (props) => {
   
