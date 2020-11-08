@@ -21,4 +21,3 @@ const rootReducer = (state = initState, action) => {
 
 export default rootReducer;
 
-// this is the redux store
