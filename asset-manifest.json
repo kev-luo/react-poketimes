@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-poketimes/static/css/main.09d0514d.chunk.css",
+    "main.js": "/react-poketimes/static/js/main.1fda81ad.chunk.js",
+    "main.js.map": "/react-poketimes/static/js/main.1fda81ad.chunk.js.map",
+    "runtime-main.js": "/react-poketimes/static/js/runtime-main.481991a9.js",
+    "runtime-main.js.map": "/react-poketimes/static/js/runtime-main.481991a9.js.map",
+    "static/js/2.524752f4.chunk.js": "/react-poketimes/static/js/2.524752f4.chunk.js",
+    "static/js/2.524752f4.chunk.js.map": "/react-poketimes/static/js/2.524752f4.chunk.js.map",
+    "index.html": "/react-poketimes/index.html",
+    "static/css/main.09d0514d.chunk.css.map": "/react-poketimes/static/css/main.09d0514d.chunk.css.map",
+    "static/js/2.524752f4.chunk.js.LICENSE.txt": "/react-poketimes/static/js/2.524752f4.chunk.js.LICENSE.txt",
+    "static/media/pokeball.05e5662d.png": "/react-poketimes/static/media/pokeball.05e5662d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.481991a9.js",
+    "static/js/2.524752f4.chunk.js",
+    "static/css/main.09d0514d.chunk.css",
+    "static/js/main.1fda81ad.chunk.js"
+  ]
+}
